@@ -4,7 +4,7 @@ const server = express();
 const gitHub = 'https://api.github.com/users/takenet/repos';
 const port = process.env.PORT || 3000;
 
-server.get('/api',async(req, res) => {
+server.get('/',async(req, res) => {
   const response = await axios.get(gitHub)
   var projectC = [];
   var j = 0;
