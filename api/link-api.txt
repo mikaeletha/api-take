@@ -1,0 +1,2 @@
+A api foi criada na plataforma da Heroku. Esse é o link dela:
+https://api-take-2022.herokuapp.com
