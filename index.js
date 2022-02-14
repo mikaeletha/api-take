@@ -15,6 +15,15 @@ server.get('/',async(req, res) => {
       j++
     }
   }
+  projectC.sort(function(a,b) {
+    if (a.created_at > b.created_at) {
+      return 1;
+    }
+    if (a.created_at < b.created_at) {
+      return -1;
+    }
+    return 0;
+  })
     return res.json(projectC)
 })
 server.listen(port, () => {
